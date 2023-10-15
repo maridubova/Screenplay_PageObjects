@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "moduleResolution": "node",
+      "module": "esnext",
+      "target": "ES2022",
+      //"module": "commonjs",
+      "types": ["playwright","mocha"]
+    }
+  }
+  
