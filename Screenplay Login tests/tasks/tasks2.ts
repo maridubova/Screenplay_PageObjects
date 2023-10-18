@@ -1,10 +1,9 @@
 import { Actor, Answerable, Task, d } from '@serenity-js/core'
 import { By, Click, Enter, PageElement, Press, Key, Navigate } from '@serenity-js/web'
-import { credentials } from '../testdata';
-export const email  =  'java1@selenium.test';
-export const password = 'JavaSeleniumTest1';
-export const openWebsiteAt= (HomePage: Answerable<'https://angular.realworld.io/'>) => 
+export const email  =  'Mashaemail.gmail.com';
+export const password = 'MashaTest';
 
+export const openWebsiteAt= (HomePage: Answerable<'https://angular.realworld.io/'>) => 
 
 
 Task.where(`#actor opens website at ${ HomePage }`,
@@ -15,12 +14,12 @@ Task.where(`#actor goes to login page ${ LoginPage }`,
     Navigate.to(LoginPage),
 );
  
- export const FillEmail = (email: 'java1@selenium.test') => 
+ export const FillEmail = (email: 'Mashaemail.gmail.com') => 
  Task.where (`#actor signs is as ${ email}`,
  Enter.theValue(email).into(PageElement.located(By.id('input[formcontrolname="email"]'))),
  ); 
  
- export const FillPassword = (password: 'JavaSeleniumTest1') => 
+ export const FillPassword = (password: 'MashaTest') => 
  Task.where (`#actor signs is as ${ password }`,
  Enter.theValue(password).into(PageElement.located(By.id('input[formcontrolname="password"]'))),
  );
